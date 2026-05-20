@@ -14,6 +14,7 @@ import {
   Cpu,
   ChevronRight,
   Sparkles,
+  CheckCircle2,
 } from "lucide-react";
 import { ideologyContent } from "../data/content";
 
@@ -39,15 +40,13 @@ export function ExampleShowcase() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl mb-20">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary mb-3">
-            Minh chứng thực tiễn
+            Quan niệm về Chủ Nghĩa Xã Hội
           </p>
           <h2 className="text-gradient-cinematic text-4xl font-bold tracking-tight sm:text-5xl mb-6">
-            Luận Điểm Gắn Liền Với Đời Sống
+            Góc độ Tiếp cận
           </h2>
           <p className="text-neutral-600 text-lg leading-relaxed">
-            Hệ thống hóa các câu nói kinh điển của Chủ tịch Hồ Chí Minh qua từng
-            lĩnh vực cụ thể, đối chiếu sinh động bằng hình ảnh và thực tiễn kỷ
-            nguyên số.
+            Trong các tác phẩm của mình, Bác không để lại một định nghĩa cố định về chủ nghĩa xã hội. Người tiếp cận nó ở nhiều góc độ khác nhau bằng cách chỉ ra đặc trưng ở một lĩnh vực nào đó.
           </p>
         </div>
 
@@ -62,11 +61,10 @@ export function ExampleShowcase() {
                 <button
                   key={item.domain}
                   onClick={() => setActiveIdx(index)}
-                  className={`relative w-full flex items-center gap-4 p-4 sm:p-5 rounded-xl border text-left transition-all duration-300 group cursor-pointer overflow-hidden ${
-                    isActive
-                      ? "border-primary/30 bg-red-50 shadow-sm"
-                      : "border-neutral-100 bg-neutral-50 hover:border-neutral-200"
-                  }`}
+                  className={`relative w-full flex items-center gap-4 p-4 sm:p-5 rounded-xl border text-left transition-all duration-300 group cursor-pointer overflow-hidden ${isActive
+                    ? "border-primary/30 bg-red-50 shadow-sm"
+                    : "border-neutral-100 bg-neutral-50 hover:border-neutral-200"
+                    }`}
                 >
                   {isActive && (
                     <motion.div
@@ -76,11 +74,10 @@ export function ExampleShowcase() {
                   )}
 
                   <div
-                    className={`p-3 rounded-lg transition-all ${
-                      isActive
-                        ? "bg-primary text-white"
-                        : "bg-neutral-200 text-neutral-600 group-hover:text-neutral-900"
-                    }`}
+                    className={`p-3 rounded-lg transition-all ${isActive
+                      ? "bg-primary text-white"
+                      : "bg-neutral-200 text-neutral-600 group-hover:text-neutral-900"
+                      }`}
                   >
                     <Icon className="w-5 h-5" />
                   </div>
@@ -97,11 +94,10 @@ export function ExampleShowcase() {
                   </div>
 
                   <ChevronRight
-                    className={`hidden sm:block w-4 h-4 transition-all ${
-                      isActive
-                        ? "text-primary translate-x-0"
-                        : "text-neutral-400 opacity-0 -translate-x-2"
-                    }`}
+                    className={`hidden sm:block w-4 h-4 transition-all ${isActive
+                      ? "text-primary translate-x-0"
+                      : "text-neutral-400 opacity-0 -translate-x-2"
+                      }`}
                   />
                 </button>
               );
@@ -154,7 +150,7 @@ export function ExampleShowcase() {
                 </div>
 
                 {/* 3. Khối Đối chiếu */}
-                <div className="grid sm:grid-cols-2 gap-5 flex-1">
+                {/* <div className="grid sm:grid-cols-2 gap-5 flex-1">
                   <div className="rounded-xl p-6 bg-neutral-50 border border-neutral-100">
                     <h4 className="font-bold text-amber-700 uppercase text-xs tracking-widest mb-4">
                       Góc nhìn lịch sử
@@ -172,11 +168,12 @@ export function ExampleShowcase() {
                       {examples[activeIdx].modernExample}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
             </AnimatePresence>
           </div>
         </div>
+
       </div>
     </section>
   );

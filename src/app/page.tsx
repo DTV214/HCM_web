@@ -23,8 +23,9 @@ export default function Home() {
       {/* Banner 3: Video Text Overlay (Sắp code) */}
       <VideoSection />
       {/* Banner 4: Nội dung cốt lõi */}
-      <CoreContent />
       <ExampleShowcase />
+      <CoreContent />
+
       {/* Banner 5: Chiều dài lịch sử */}
       <HistoryTimeline />
       {/* Banner 6: Bối cảnh hiện đại */}

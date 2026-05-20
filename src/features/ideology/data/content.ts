@@ -156,9 +156,9 @@ export const ideologyContent = {
       description:
         "Toàn cầu hóa mở ra cơ hội lớn nhưng đi kèm nguy cơ mất bản sắc. Việc vận dụng nguyên tắc quan hệ quốc tế của Bác là kim chỉ nam tối thượng.",
       points: [
-        "Phát huy nội lực làm gốc: 'Một dân tộc không tự lực cánh sinh... thì không xứng đáng được độc lập'. Quốc gia phải tự chủ kinh tế, có năng lực cạnh tranh cốt lõi.",
+        "Phát huy nội lực làm gốc: 'Một dân tộc không tự lực cánh sinh mà cứ ngồi chờ dân tộc khác giúp đỡ thì không xứng đáng được độc lập. Muốn người ta giúp mình, tiêu chuẩn đầu tiên là mình phải tự giúp mình đã'. Quốc gia phải tự chủ kinh tế, có năng lực cạnh tranh cốt lõi.",
         "Tranh thủ ngoại lực khôn khéo: Tận dụng sự hợp tác, viện trợ trên tinh thần tôn trọng độc lập, chủ quyền của nhau.",
-        "Hội nhập nhưng không hòa tan: Bác từng nói 'Ta không thể giống Liên Xô... vì có lịch sử địa lý khác'. Đoàn kết, học tập kinh nghiệm nước bạn nhưng không máy móc, giữ vững tự chủ.",
+        "Hội nhập nhưng không hòa tan: Bác từng nói 'Ta không thể giống Liên Xô, vì Liên Xô có phong tục tập quán khác, có lịch sử địa lý khác.'. Đoàn kết, học tập kinh nghiệm nước bạn nhưng không máy móc, giữ vững tự chủ.",
       ],
     },
     {

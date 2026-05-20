@@ -8,8 +8,12 @@ import { ideologyContent } from "../data/content";
 // Gán icon tương ứng chính xác cho 3 bối cảnh
 const contextIcons = [Cpu, Globe2, TrendingUp];
 
-const imageUrl =
-  "https://res.cloudinary.com/dratbz8bh/image/upload/v1779247572/ab0823fd366b7db8c30baa5b256f6a1d_b4xxlv.jpg";
+// Mảng URL hình ảnh tương ứng cho mỗi bối cảnh hiện đại
+const contextImages = [
+  "https://res.cloudinary.com/dizv4hp3b/image/upload/v1779262584/t77467_wh9fh7.jpg",
+  "https://res.cloudinary.com/dizv4hp3b/image/upload/v1779263041/b297765a3c8f91d64d94154b852db7d3bia_tap_1_hgmazk.jpg",
+  "https://res.cloudinary.com/dizv4hp3b/image/upload/v1779263350/dhvi_ytd6px.png",
+];
 
 export function ModernContext() {
   const contextItems = ideologyContent.modernContext;
@@ -48,15 +52,14 @@ export function ModernContext() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className={`flex flex-col gap-10 lg:gap-16 lg:items-center ${
-                  isEven ? "lg:flex-row" : "lg:flex-row-reverse"
-                }`}
+                className={`flex flex-col gap-10 lg:gap-16 lg:items-center ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"
+                  }`}
               >
                 {/* Cột 1: Hình ảnh */}
                 <div className="w-full lg:w-[45%]">
                   <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-neutral-100 shadow-lg group">
                     <Image
-                      src={imageUrl}
+                      src={contextImages[index]}
                       alt={item.title}
                       fill
                       sizes="(min-width: 1024px) 50vw, 100vw"

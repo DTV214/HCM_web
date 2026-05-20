@@ -25,9 +25,7 @@ export function IntroductionSection() {
           </h2>
           <blockquote className="border-l-4 border-primary pl-6 py-2">
             <p className="text-lg text-neutral-600 leading-relaxed italic">
-              Tại sao Độc lập dân tộc phải gắn liền với Chủ nghĩa xã hội? Đây
-              không chỉ là một lý luận lịch sử, mà còn là lời giải cho sự phát
-              triển bền vững của Việt Nam trong bối cảnh hiện đại?
+              "Chủ nghĩa xã hội là làm sao cho dân giàu, nước mạnh, mọi người đều có cơm ăn, áo mặc, ai cũng được học hành"
             </p>
           </blockquote>
         </motion.div>

@@ -109,11 +109,10 @@ export function HeroSection() {
             type="button"
             aria-label={`Chuyển đến slide ${index + 1}`}
             onClick={() => scrollTo(index)}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-              selectedIndex === index
+            className={`h-2.5 rounded-full transition-all duration-300 ${selectedIndex === index
                 ? "w-8 bg-primary"
                 : "w-2.5 bg-white/60 hover:bg-white"
-            }`}
+              }`}
           />
         ))}
       </div>

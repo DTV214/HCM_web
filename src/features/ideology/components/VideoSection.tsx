@@ -10,7 +10,7 @@ export function VideoSection() {
 
   // Link video Cloudinary của bạn
   const videoUrl =
-    "https://res.cloudinary.com/dratbz8bh/video/upload/v1776699935/ChuNghiaXaHoi_2_qzvgwc.mp4";
+    "https://res.cloudinary.com/dratbz8bh/video/upload/v1779261448/HCM_wn2zqu.mp4";
 
   return (
     <>

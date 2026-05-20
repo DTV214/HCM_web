@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
         pathname: "/dratbz8bh/**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/dizv4hp3b/**",
+        search: "",
+      },
     ],
   },
 };
