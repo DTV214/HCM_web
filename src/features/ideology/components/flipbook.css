@@ -1,0 +1,41 @@
+/* ==========================================================================
+   CSS DÀNH RIÊNG CHO BANNER FLIPBOOK - TIME PORTAL
+   (Tuyệt đối độc lập - Không ảnh hưởng đến globals.css tổng của dự án)
+   ========================================================================== */
+
+/* 1. Hiệu ứng giả lập chất liệu da thuộc và sớ giấy của cuốn sổ tay lịch sử cổ đại */
+.book-historical-texture {
+    background-color: #fff7f7 !important;
+    background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #fffafa 0%, #fee2e2 50%, #dbeafe 100%) !important;
+    background-blend-mode: soft-light, normal !important;
+}
+
+/* 2. Ép phông chữ Serif chuẩn của hệ thống cho các tiêu đề tư liệu cổ để hoàn toàn tránh lỗi ký tự Tiếng Việt */
+.font-historical-serif {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* 3. Logic chuyển động mượt mà liên tục cho hàng ảnh lịch sử (Marquee Scroller Pattern) */
+@keyframes flipbookMarquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-flipbook-marquee {
+    display: flex !important;
+    width: max-content !important;
+    animation: flipbookMarquee 28s linear infinite !important;
+}
+
+/* Hỗ trợ dừng chuyển động mượt khi người dùng rê chuột vào khám phá thẻ ảnh */
+.animate-flipbook-marquee:hover {
+    animation-play-state: paused !important;
+}
